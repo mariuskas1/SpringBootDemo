@@ -15,7 +15,7 @@ public class PersonService {
         this.personDao = personDao;
     }
 
-    public void addPerson(Person person){
-        personDao.insertPerson(person);
+    public int addPerson(Person person){
+        return personDao.insertPerson(person);
     }
 }
